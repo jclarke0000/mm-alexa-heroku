@@ -83,7 +83,7 @@ module.exports =
     var alexaResponse;
     switch (message.command) {
       case 'SWITCH_PROFILE':
-        if (message.person == 'undefined') {
+        if (message.person == undefined) {
           alexaResponse = "Sorry. There's no profile for that person.";
         } else {          
           alexaResponse = "OK. Here is " + message.person + "'s profile";
