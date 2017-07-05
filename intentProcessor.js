@@ -83,7 +83,11 @@ module.exports =
     var alexaResponse;
     switch (message.command) {
       case 'SWITCH_PROFILE':
-        alexaResponse = "OK. Here is " + message.person + "'s profile";
+        if (message.person == 'undefined') {
+          alexaResponse = "Sorry. There's no profile for that person.";
+        } else {          
+          alexaResponse = "OK. Here is " + message.person + "'s profile";
+        }
         break;
       case 'SHUT_DOWN':
         alexaResponse = "OK. Shutting down.";
