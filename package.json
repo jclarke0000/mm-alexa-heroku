@@ -1,0 +1,28 @@
+{
+  "name": "alexa-pubnub-heroku",
+  "version": "0.2.5",
+  "description": "Alexa skill adapter as a web service on heroku",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.14.1",
+    "pubnub": "^4.4.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gopal-amlekar/alexa-pubnub-heroku"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
